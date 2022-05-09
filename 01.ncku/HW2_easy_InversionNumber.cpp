@@ -1,5 +1,6 @@
 #include<iostream>
 #include <vector>
+#include <map>
 using namespace std;
 
 long long int CountInversion(int *numbers, int front, int mid, int end){
@@ -48,7 +49,7 @@ int main()
     for(int i=0; i<num; i++){
         cin >> numbers[i];
     }    
-
+    
     cout << MergeSort(&numbers[0], 0, num-1) % 524287;
     return 0;
 }
